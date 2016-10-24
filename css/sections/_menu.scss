@@ -1,0 +1,87 @@
+.menu {
+    background: url(../img/bg/menu.jpg) 50% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.section__title.section__title_white {
+    color: #fff;
+}
+
+.menu-acco {
+    position: absolute;
+    top: 0;    
+    right: 0;
+    bottom: 0;
+    @extend %clearfix; 
+
+    .menu-acco__item:nth-child(1) .menu-acco__trigger {
+      background-image: url(../img/content/accordeon/img1.jpg);
+    }
+
+    .menu-acco__item:nth-child(2) .menu-acco__trigger{
+      background-image: url(../img/content/accordeon/img2.jpg);
+    }
+
+    .menu-acco__item:nth-child(3) .menu-acco__trigger{
+      background-image: url(../img/content/accordeon/img3.jpg);
+    }     
+}
+
+.menu-acco__item {
+    float: left;
+    height: 100%;
+
+
+}
+
+.menu-acco__trigger {
+    position: relative; 
+    display: block;
+    float: left;         
+    width: 80px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+
+}
+
+.menu-acco__content {
+    width: 550px;  
+    height: 100%;
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.menu-acco__text {
+    padding: 60px 30px;
+    width: 550px;  
+    @include fira('Ubuntu-Light');       
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.menu-acco__trigger-text {
+    position: absolute;
+    top: 50%;
+    left: -260px;
+    margin-top: -45px; 
+    width: 650px;
+    height: 80px;    
+    @include fira('Gagalin-Regular');      
+    font-size: 40px;
+    color: #fff;
+    @include transform(rotate(-90deg));
+    text-align: center;
+    white-space: nowrap;
+}

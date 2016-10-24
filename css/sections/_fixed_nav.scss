@@ -1,0 +1,47 @@
+.fixed-nav {
+    position: fixed;
+    top: 90px;
+    right: 40px;	
+}
+
+.fixed-nav__item {
+    margin-bottom: 5px;
+}
+
+.fixed-nav__link {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: relative;
+}
+
+.fixed-nav__link:after, .fixed-nav__link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    @include border_radius(50%);
+}
+
+.fixed-nav__link:before {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: 0;
+    @include transition(.5s);
+}
+
+.fixed-nav__link:after {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+}
+
+
+.fixed-nav__link:hover:before {
+    padding:7px;
+    opacity: 1;
+}

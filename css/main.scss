@@ -1,0 +1,29 @@
+
+$color_red: #e45028;
+$color_yellow: #f9b43b;
+$color_grey:#2f3234;
+$color_grey-darck:#1f2122;
+
+//adjustment
+@import "layout/fonts.scss";
+@import "layout/mixins.scss";
+@import "layout/normalize.scss";
+@import "layout/adjustment.scss";
+
+  
+//sections
+@import "sections/header.scss";
+@import "sections/footer.scss";
+@import "sections/best.scss";
+@import "sections/burgers.scss";
+@import "sections/map.scss";
+@import "sections/menu.scss";
+@import "sections/order.scss";
+@import "sections/reviews.scss";
+@import "sections/start.scss";
+@import "sections/team.scss";
+@import "sections/fixed_nav.scss";
+@import "sections/popup.scss";
+
+
+//@import "layout/media/media.scss"; 

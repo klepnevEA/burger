@@ -1,0 +1,213 @@
+.burgers {
+    background: #f9b43b;
+    background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+    background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
+}
+
+
+
+.burgers__container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.burger-slider-wrap {
+    position: relative;
+}
+
+.burgers-slider__item {
+    position: relative;
+    @extend %clearfix;     
+}
+
+.ingredients {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    @include border_radius(5px);
+    @include transition(.5s);
+    background: #E87432;
+    z-index: 10;
+}
+
+.ingredients__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+.ingredients__icon-text {
+    font-size: 14px;  
+    color: #fff;
+    @include fira('Gagalin-Regular');    
+}
+
+.ingredients__dropdown {
+    position: absolute;
+    width: 270px;
+    padding: 20px;
+    background: #fff;
+    @include border_radius(7px);    
+    left: -1000px;
+    opacity: 0;
+    z-index: 100;
+    @include transition(opacity .3s); 
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 31px;
+      left: -30px;        
+      top: 0;
+      bottom: 0;
+   
+    }   
+}
+
+.indredients__table {
+    width: 100%;
+}
+
+.ingredients__table-cell {
+    padding: 7px 0;  
+    vertical-align: middle;
+}
+
+.ingredients:hover .ingredients__dropdown {
+    left: 100%;
+    opacity: 1;
+}
+
+.burger-weight {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.burger-weight__measure {
+    position: relative; 
+    width: 65px;
+    height: 60px;     
+    background: url(../img/icons/kkal.svg);
+    background-repeat: no-repeat;
+}
+
+.burger-weight__amount {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    @include fira('Gagalin-Regular'); 
+    text-align: center;
+    color: white;
+    font-size: 20px;      
+}
+
+.burger-weight__title {
+    @include fira('Gagalin-Regular');  
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.burgers-slider__img {
+    padding-top: 95px;    
+    width: 50%;
+    float: left;
+}
+
+.burgers-slider__pic {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.burgers-slider__text {
+    width: 50%;  
+    float: left;
+
+    .section__title {
+      margin-bottom: 14px;
+      line-height: 1em;
+    }
+
+    .section__title_white {color: #fff;}
+}
+
+.burgers-slider__options {
+    @extend %clearfix;   
+}
+
+.burgers-slider__text {
+    margin-bottom: 18px;  
+    color: #fff;
+}
+
+.text-block p {
+    line-height: 1.8;  
+    font-size: 14px;
+}
+
+.burgers-slider__price {
+    display: inline-block;
+    @include fira('Gagalin-Regular');      
+    vertical-align: middle;
+    color: $color_red;
+}
+
+.burgers-slider__price-amount {
+    display: inline-block;
+    line-height: 1;    
+    font-size: 71px;
+}
+
+.burgers-slider__price-measure {
+    display: inline-block;
+    line-height: 1;  
+    font-size: 30px;
+}
+
+.burgers-slider__buy {
+    display: inline-block;
+    margin-left: 30px;    
+    vertical-align: bottom;
+    padding: 9px 16px;    
+    background: $color_red;
+    @include fira('Ubuntu-Medium');      
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    @include border_radius(6px);
+    
+
+}
+
+
+.burger-slider__btn_next {
+    right: -25px;
+
+    img {
+      @include transform( rotate(-90deg));    
+    }
+}
+
+.burger-slider__btn_prev {
+    left: -25px;
+
+    img {
+      @include transform( rotate(90deg));
+    }
+} 
+.burger-slider__btn_next, .burger-slider__btn_prev {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));    
+    z-index: 9000;
+}
