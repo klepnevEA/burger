@@ -60,9 +60,14 @@
   color: #000;
 }
 
-.start__container .container {
+.start__container {
+    text-align: center;
+
+  .container {
     padding-top: 10vh;
-}
+  }
+} 
+.start__container 
 
 .start__desc {
     font-size: 63px;
@@ -70,4 +75,12 @@
     @include fira('Lifehack-Medium');    
     text-transform: lowercase;
     line-height: 1em; 
+}
+
+.arrow-scroll {
+    display: inline-block;
+    position: relative;
+    margin-top: 26px;
+    cursor: pointer;
+    z-index:1000;
 }

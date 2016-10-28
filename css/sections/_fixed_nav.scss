@@ -6,6 +6,22 @@
 
 .fixed-nav__item {
     margin-bottom: 5px;
+
+    .fixed-nav__link:before {
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        opacity: 0;
+        @include transition(.5s);        
+    }
+
+    &.active {
+        .fixed-nav__link:before {
+            padding:7px;
+            opacity: 1;
+        }
+    }
 }
 
 .fixed-nav__link {
@@ -25,14 +41,15 @@
     @include border_radius(50%);
 }
 
-.fixed-nav__link:before {
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    opacity: 0;
-    @include transition(.5s);
-}
+// .fixed-nav__link:before,
+// .fixed-nav__link.active {
+//     width: 0px;
+//     height: 0px;
+//     border-radius: 50%;
+//     border: 1px solid #fff;
+//     opacity: 0;
+//     @include transition(.5s);
+// }
 
 .fixed-nav__link:after {
     width: 6px;
@@ -41,7 +58,7 @@
 }
 
 
-.fixed-nav__link:hover:before {
+.fixed-nav__link:hover:before{
     padding:7px;
     opacity: 1;
 }

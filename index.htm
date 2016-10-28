@@ -23,7 +23,7 @@
 				<!--start-->
 
 
-				<section class="section start">
+				<section class="section start active">
 					<div class="container">
 						<header class="header">
 							<div class="header__logo">
@@ -32,21 +32,21 @@
 							<div class="header__menu">
 								<nav class="nav">
 									<ul class="nav__list">
-										<li class="nav__item"><a class="nav__link" href="1">о нас</a>
+										<li class="nav__item"><a class="nav__link nav-scroll" href="1">о нас</a>
 										</li>
-										<li class="nav__item"><a class="nav__link" href="2">бургеры</a>
+										<li class="nav__item"><a class="nav__link nav-scroll" href="2">бургеры</a>
 										</li>
-										<li class="nav__item"><a class="nav__link" href="3">команда</a>
+										<li class="nav__item"><a class="nav__link nav-scroll" href="3">команда</a>
 										</li>
-										<li class="nav__item"><a class="nav__link" href="4">меню</a>
+										<li class="nav__item"><a class="nav__link nav-scroll" href="4">меню</a>
 										</li>
-										<li class="nav__item"><a class="nav__link" href="5">отзывы</a>
+										<li class="nav__item"><a class="nav__link nav-scroll" href="5">отзывы</a>
 										</li>
-										<li class="nav__item"><a class="nav__link" href="7">контакты</a>
+										<li class="nav__item"><a class="nav__link nav-scroll" href="7">контакты</a>
 										</li>
 									</ul>
 								</nav>
-								<a class="order-link btn" href="6">Заказать</a>
+								<a class="nav__link order-link" href="6">Заказать</a>
 							</div>
 						</header>
 						<div class="start__container">
@@ -61,7 +61,9 @@
 									</div>
 								</div>
 							</div>
+							<img src="img/icons/arrow-scroll.svg" alt="test" class="arrow-scroll">							
 						</div>
+
 					</div>
 				</section>
 
@@ -137,7 +139,7 @@
 									</a>
 								</div>
 								<ul class="burgers-slider">
-									<li class="burgers-slider__item">
+									<li class="burgers-slider__item active">
 										<div class="ingredients">
 											<div class="ingredients__icon">
 												<div class="ingredients__icon-pic">
@@ -241,10 +243,229 @@
 													<div class="burgers-slider__price-amount">500</div>
 													<div class="burgers-slider__price-measure">рублей</div>
 												</div>
-													<a class="burgers-slider__buy btn" href="6">Заказать</a>
+													<a class="nav-scroll burgers-slider__buy btn" href="6">Заказать</a>
 											</div>
 										</div>
 									</li>
+
+									<li class="burgers-slider__item">
+										<div class="ingredients">
+											<div class="ingredients__icon">
+												<div class="ingredients__icon-pic">
+													<img src="img/icons/burger.svg" alt="burger" >
+												</div>
+												<div class="ingredients__icon-text">Состав</div>
+											</div>
+
+											<div class="ingredients__dropdown">
+												<table class="indredients__table">
+													<tbody>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/beef.svg" alt="beef" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Говядина</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">300г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/buns.svg" alt="buns" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Булочки</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">100г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><<img src="img/icons/salad.svg" alt="salad" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Зелень</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">70г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/sauce.svg" alt="salad" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Соус</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">150г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/cucumber.svg" alt="cucumber" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Овощи</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">200г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/cheese.svg" alt="cheese" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Сыр</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">80г</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="burger-weight">
+											<div class="burger-weight__measure">
+												<div class="burger-weight__amount">1200</div>
+											</div>
+											<div class="burger-weight__title">ккал</div>
+										</div>
+
+										<div class="burgers-slider__img">
+											<img class="burgers-slider__pic" src="img/content/slider/black-burger.png" alt="бургер" />
+										</div>
+
+										<div class="burgers-slider__text">
+											<div class="section__title section__title_white">Dark Beef Burger</div>
+											<div class="burgers-slider__text text-block">
+												<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+											</div>
+											<div class="burgers-slider__options">
+												<div class="burgers-slider__price">
+													<div class="burgers-slider__price-amount">1500</div>
+													<div class="burgers-slider__price-measure">рублей</div>
+												</div>
+													<a class="nav-scroll burgers-slider__buy btn" href="6">Заказать</a>
+											</div>
+										</div>
+									</li>
+
+
+									<li class="burgers-slider__item">
+										<div class="ingredients">
+											<div class="ingredients__icon">
+												<div class="ingredients__icon-pic">
+													<img src="img/icons/burger.svg" alt="burger" >
+												</div>
+												<div class="ingredients__icon-text">Состав</div>
+											</div>
+
+											<div class="ingredients__dropdown">
+												<table class="indredients__table">
+													<tbody>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/beef.svg" alt="beef" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Говядина</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">300г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/buns.svg" alt="buns" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Булочки</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">100г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><<img src="img/icons/salad.svg" alt="salad" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Зелень</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">70г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/sauce.svg" alt="salad" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Соус</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">150г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/cucumber.svg" alt="cucumber" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Овощи</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">200г</div>
+															</td>
+														</tr>
+														<tr class="ingredients__table-row">
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon"><img src="img/icons/cheese.svg" alt="cheese" ></div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">Сыр</div>
+															</td>
+															<td class="ingredients__table-cell">
+																<div class="ingredients__table-icon">80г</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="burger-weight">
+											<div class="burger-weight__measure">
+												<div class="burger-weight__amount">1200</div>
+											</div>
+											<div class="burger-weight__title">ккал</div>
+										</div>
+
+										<div class="burgers-slider__img">
+											<img class="burgers-slider__pic" src="img/content/slider/black-burger.png" alt="бургер" />
+										</div>
+
+										<div class="burgers-slider__text">
+											<div class="section__title section__title_white">Dark Beef Burger</div>
+											<div class="burgers-slider__text text-block">
+												<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+											</div>
+											<div class="burgers-slider__options">
+												<div class="burgers-slider__price">
+													<div class="burgers-slider__price-amount">2500</div>
+													<div class="burgers-slider__price-measure">рублей</div>
+												</div>
+													<a class="nav-scroll burgers-slider__buy btn" href="6">Заказать</a>
+											</div>
+										</div>
+									</li>									
 
 								</ul>
 							</div>
@@ -263,21 +484,58 @@
 						<ul class="team-acco">
 							<li class="team-acco__item"><a class="team-acco__trigger" href="#">дэниэл редклифф</a>
 								<div class="team-acco__content">
-									<div class="team-acco__pic">
-										<div class="team-acco__img" style="background-image: url('img/content/face.jpg')"></div>
+									<div class="team-acco__wrap">
+										<div class="team-acco__pic">
+											<div class="team-acco__img" style="background-image: url('img/content/face.jpg')"></div>
+										</div>
+										<div class="team-acco__text">
+											<div class="team-acco__title">Шеф-повар</div>
+											<div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										</div>
 									</div>
-									<div class="team-acco__text">
-										<div class="team-acco__title">Шеф-повар</div>
-										<div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-									</div>
+
 								</div>
 							</li>
 							<li class="team-acco__item"><a class="team-acco__trigger" href="#">ричард джеймс</a>
+								<div class="team-acco__content">
+									<div class="team-acco__wrap">
+										<div class="team-acco__pic">
+											<div class="team-acco__img" style="background-image: url('img/content/face.jpg')"></div>
+										</div>
+										<div class="team-acco__text">
+											<div class="team-acco__title">Шеф-повар</div>
+											<div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										</div>
+									</div>
+								</div>
 							</li>
 							<li class="team-acco__item"><a class="team-acco__trigger" href="#">Джейк Финн</a>
-							</li>
+								<div class="team-acco__content">
+									<div class="team-acco__wrap">
+										<div class="team-acco__pic">
+											<div class="team-acco__img" style="background-image: url('img/content/face.jpg')"></div>
+										</div>
+										<div class="team-acco__text">
+											<div class="team-acco__title">Шеф-повар</div>
+											<div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										</div>
+									</div>
+								</div>
+							</li>							
 							<li class="team-acco__item"><a class="team-acco__trigger" href="#">Николай Иванов</a>
+								<div class="team-acco__content">
+									<div class="team-acco__wrap">
+										<div class="team-acco__pic">
+											<div class="team-acco__img" style="background-image: url('img/content/face.jpg')"></div>
+										</div>
+										<div class="team-acco__text">
+											<div class="team-acco__title">Шеф-повар</div>
+											<div class="team-acco__text-content">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										</div>
+									</div>
+								</div>
 							</li>
+
 						</ul>
 					</div>
 
@@ -294,16 +552,24 @@
 								<div class="menu-acco__trigger-text">Для мясоедов</div></a>
 							<div class="menu-acco__content">
 								<div class="menu-acco__text">
-									Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-									Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
-								</div>
+									Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.
 							</div>
 						</li>
 						<li class="menu-acco__item"><a class="menu-acco__trigger" href="#">
 								<div class="menu-acco__trigger-text">Вегетарианское</div></a>
+								<div class="menu-acco__content">
+								<div class="menu-acco__text">
+									Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.
+								</div>
+							</div>
 						</li>
 						<li class="menu-acco__item"><a class="menu-acco__trigger" href="#">
 								<div class="menu-acco__trigger-text">Диетическое</div></a>
+								<div class="menu-acco__content">
+								<div class="menu-acco__text">
+									Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.
+								</div>
+							</div>
 						</li>
 					</ul>
 				</section>
@@ -320,7 +586,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/1.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -330,7 +596,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/2.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -340,7 +606,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/3.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -350,7 +616,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/4.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -360,7 +626,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/5.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -370,7 +636,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/6.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -380,7 +646,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/7.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -390,7 +656,7 @@
 								<div class="review__photo" style="background-image: url('img/content/reviews/8.jpg')"></div>
 								<div class="review__hover">
 									<div class="review__title">Константин Спилберг</div>
-									<div class="review__shorttext">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="review__shorttext">Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.</div>
 									<div class="review__button-wrap"><a class="review__view" href="#full-review">Подробнее</a></div>
 								</div>
 							</div>
@@ -528,14 +794,14 @@
 
 
 		<ul class="fixed-nav">
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="0"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="1"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="2"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="3"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="4"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="5"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="6"></a></li>
-			<li class="fixed-nav__item"><a class="fixed-nav__link" href="7"></a></li>
+			<li class="fixed-nav__item active"><a class="nav-scroll fixed-nav__link" href="0"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="1"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="2"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="3"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="4"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="5"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="6"></a></li>
+			<li class="fixed-nav__item"><a class="nav-scroll fixed-nav__link" href="7"></a></li>
 		</ul>	
 
 
@@ -543,18 +809,19 @@
 
 
 		<div class="full-review popup" id="full-review">
-			<a class="full-review__close" href="#">
-				<img src="img/icons/close.svg" alt="close" >
-			</a>
-			<div class="full-review__inner">
-				<div class="full-review__title">Констнтин Спилберг</div>
-				<div class="full-review__content">
-							Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-							
+			<div class="full-review__wrap">
+				<a class="full-review__close" href="#">
+					<img class="popup__close" src="img/icons/close.svg" alt="close" >
+				</a>
+				<div class="full-review__inner">
+					<div class="full-review__title">Констнтин Спилберг</div>
+					<div class="full-review__content">
+								Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.Одна работа, никакого безделья,бедняга Джек не знает веселья.
+								
+					</div>
 				</div>
 			</div>
 		</div>
-
 
 		<!--success-->
 
@@ -575,5 +842,12 @@
 			</div>
 		</div>		
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/accordeon.js"></script>
+    <script src="js/slider.js"></script> 
+    <script src="js/nav.js"></script> 
+    <script src="js/popup.js"></script>  
+    <script src="js/accordeon_menu.js"></script>               
 	</body>
 	</html>

@@ -38,7 +38,11 @@
     float: left;
     height: 100%;
 
-
+    &.active {
+        .menu-acco__content {
+            width: 550px;  
+        }
+    }
 }
 
 .menu-acco__trigger {
@@ -55,11 +59,12 @@
 }
 
 .menu-acco__content {
-    width: 550px;  
+    width: 0px;  
     height: 100%;
     float: left;
     background: rgba(0, 0, 0, 0.8);
     overflow: hidden;
+    @include transition(.5s)
 }
 
 .menu-acco__text {
@@ -74,8 +79,9 @@
 .menu-acco__trigger-text {
     position: absolute;
     top: 50%;
-    left: -260px;
+    left: -285px;
     margin-top: -45px; 
+    padding-top: 27px;    
     width: 650px;
     height: 80px;    
     @include fira('Gagalin-Regular');      

@@ -1,10 +1,50 @@
 .popup {
-    display: none;
+    
+    position: fixed;
+    top: -8000px;
+    left: 0;
+    width: 100vw;   
+    height: 100vh;
+    background: rgba(47, 50, 52, 0.92);
+
+    &.active {
+        top: 0px;
+
+        .full-review__wrap {
+             @include transform(scale(1));
+             opacity:1;            
+        }       
+    }
+   
 }
 
-.full-review {
-    position: relative;   
+
+
+// .full-review {
+//     position: relative;   
+//     padding: 25px 20px;
+// }
+
+.full-review__wrap {
+    display: inline-block;
+    background-color: #f9f9f9;
+    color: #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 460px;
+    height: 227px;    
     padding: 25px 20px;
+    @include border_radius(4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+    @include transition(.5s);
+    transition-timing-function: cubic-bezier(0.61, 0.19, 0.72, 1.76);
+    @include transform(scale(0.5)); 
+    opacity:0;   
+
 }
 
 .full-review__close {
@@ -33,6 +73,7 @@
 .full-review__content {
     @include fira('Ubuntu-Light');     
     font-size: 14px;
+    overflow: auto;
 }
 
 .status-popup {

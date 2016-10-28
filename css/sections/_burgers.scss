@@ -5,7 +5,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
 }
 
-
+.burgers-slider {
+    position: relative;
+    white-space: nowrap;
+}
 
 .burgers__container {
     position: relative;
@@ -14,12 +17,18 @@
     transform: translateY(-50%);
 }
 
+.burger-slider {
+    overflow: hidden;
+}
+
 .burger-slider-wrap {
     position: relative;
 }
 
 .burgers-slider__item {
     position: relative;
+    display:inline-block;
+    white-space: normal;
     @extend %clearfix;     
 }
 
@@ -53,12 +62,14 @@
     position: absolute;
     width: 270px;
     padding: 20px;
+    left: 100%;
+    visibility: hidden;
     background: #fff;
     @include border_radius(7px);    
-    left: -1000px;
+    //left: -1000px;
     opacity: 0;
     z-index: 100;
-    @include transition(opacity .3s); 
+    @include transition(opacity .8s); 
 
     &:before {
       content: "";
@@ -81,7 +92,7 @@
 }
 
 .ingredients:hover .ingredients__dropdown {
-    left: 100%;
+    visibility: visible;
     opacity: 1;
 }
 
