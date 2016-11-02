@@ -6,6 +6,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/Ubuntu.eot");
@@ -13,6 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Ubuntu-Medium';
   src: url("../fonts/Ubuntu-Medium.eot");
@@ -20,6 +22,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Ubuntu-Light';
   src: url("../fonts/Ubuntu-Light.eot");
@@ -27,6 +30,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Lifehack-Medium';
   src: url("../fonts/Lifehack-Medium.eot");
@@ -34,6 +38,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Gagalin-Regular';
   src: url("../fonts/Gagalin-Regular.eot");
@@ -41,6 +46,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .wrapper::after, .container::after, .nav__list::after, .burgers-slider__item::after, .burgers-slider__options::after, .menu-acco::after, .order__form::after, .order__form-row::after, .reviews__list::after, .start__content::after, .team-acco__content::after, .team-acco__wrap::after, .wrapper::before, .container::before, .nav__list::before, .burgers-slider__item::before, .burgers-slider__options::before, .menu-acco::before, .order__form::before, .order__form-row::before, .reviews__list::before, .start__content::before, .team-acco__content::before, .team-acco__wrap::before {
   content: '';
   display: block;
@@ -566,16 +572,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .nav__list {
   width: 100%;
 }
+
 .nav__list .nav__item:last-child::after {
   display: none;
 }
 
 .nav__item {
   display: block;
-  margin-right: 14px;
+  margin-right: 12px;
   float: left;
   white-space: nowrap;
 }
+
 .nav__item::after {
   content: "";
   display: inline-block;
@@ -660,10 +668,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .socials__link img {
   width: 100%;
   height: 100%;
 }
+
 .socials__link:hover {
   opacity: 1;
 }
@@ -675,6 +685,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   background-size: cover;
   position: relative;
 }
+
 .best .container {
   position: relative;
   top: 50%;
@@ -789,6 +800,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   -moz-transition: opacity 0.8s;
   transition: opacity 0.8s;
 }
+
 .ingredients__dropdown:before {
   content: "";
   position: absolute;
@@ -859,10 +871,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   width: 50%;
   float: left;
 }
+
 .burgers-slider__text .section__title {
   margin-bottom: 14px;
   line-height: 1em;
 }
+
 .burgers-slider__text .section__title_white {
   color: #fff;
 }
@@ -915,6 +929,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .burger-slider__btn_next {
   right: -25px;
 }
+
 .burger-slider__btn_next img {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -926,6 +941,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .burger-slider__btn_prev {
   left: -25px;
 }
+
 .burger-slider__btn_prev img {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -971,12 +987,15 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   right: 0;
   bottom: 0;
 }
+
 .menu-acco .menu-acco__item:nth-child(1) .menu-acco__trigger {
   background-image: url(../img/content/accordeon/img1.jpg);
 }
+
 .menu-acco .menu-acco__item:nth-child(2) .menu-acco__trigger {
   background-image: url(../img/content/accordeon/img2.jpg);
 }
+
 .menu-acco .menu-acco__item:nth-child(3) .menu-acco__trigger {
   background-image: url(../img/content/accordeon/img3.jpg);
 }
@@ -985,6 +1004,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   float: left;
   height: 100%;
 }
+
 .menu-acco__item.active .menu-acco__content {
   width: 550px;
 }
@@ -1046,6 +1066,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   background-repeat: 100%;
   background-size: cover;
 }
+
 .order .container {
   position: relative;
   top: 50%;
@@ -1055,6 +1076,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 .order .section__title {
   text-align: center;
 }
@@ -1073,6 +1095,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   float: left;
   width: 47.6%;
 }
+
 .order__form-row_double .order__form-block:last-child {
   margin-left: 20px;
 }
@@ -1103,6 +1126,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   width: 21.4%;
   margin-left: 20px;
 }
+
 .order__form-row_quatro .order__form-block:first-child {
   margin-left: 0;
 }
@@ -1119,6 +1143,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   vertical-align: middle;
   white-space: nowrap;
 }
+
 .order__radio input {
   display: none;
 }
@@ -1131,6 +1156,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   border-radius: 50%;
   background: #fff;
 }
+
 .order__radio-fake:after {
   content: '';
   display: block;
@@ -1168,9 +1194,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .order__radio_checkbox .order__radio-fake {
   border-radius: 0px;
 }
+
 .order__radio_checkbox .order__radio-elem + .order__radio-fake:after {
   background: transparent;
 }
+
 .order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
   background: url("../img/icons/check.svg");
   background-repeat: no-repeat;
@@ -1219,6 +1247,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   height: 100%;
   color: #fff;
 }
+
 .review:hover .review__hover {
   -webkit-transform: translate(-50%, -50%) scale(1);
   -moz-transform: translate(-50%, -50%) scale(1);
@@ -1287,6 +1316,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   transition: 0.5s;
   color: #fff;
 }
+
 .review__view:hover {
   background-color: #1f2122;
 }
@@ -1298,9 +1328,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   background-size: cover;
   position: relative;
 }
+
 .start .container {
   position: static;
 }
+
 .start::before {
   content: '';
   position: absolute;
@@ -1352,6 +1384,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .start__container {
   text-align: center;
 }
+
 .start__container .container {
   padding-top: 10vh;
 }
@@ -1378,6 +1411,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   background: url(../img/bg/SBS_1255-X2.jpg) 50% no-repeat;
   background-size: cover;
 }
+
 .team .section__title {
   margin-bottom: 12%;
 }
@@ -1411,6 +1445,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   font-size: 14px;
   margin-bottom: 14px;
 }
+
 .team-acco__trigger::before {
   content: '';
   position: absolute;
@@ -1429,6 +1464,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .team-acco__trigger.active::before {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -1493,6 +1529,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .fixed-nav__item {
   margin-bottom: 5px;
 }
+
 .fixed-nav__item .fixed-nav__link:before {
   width: 0px;
   height: 0px;
@@ -1503,6 +1540,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .fixed-nav__item.active .fixed-nav__link:before {
   padding: 7px;
   opacity: 1;
@@ -1550,9 +1588,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   height: 100vh;
   background: rgba(47, 50, 52, 0.92);
 }
+
 .popup.active {
   top: 0px;
 }
+
 .popup.active .full-review__wrap {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1603,6 +1643,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .full-review__close img {
   width: 100%;
   height: 100%;
@@ -1634,5 +1675,3 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   margin-bottom: 20px;
   font-size: 14px;
 }
-
-/*# sourceMappingURL=main.css.map */

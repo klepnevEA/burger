@@ -10,7 +10,7 @@
 	<title>Сайт-портфолио</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
 	<link rel="stylesheet" href="css/main.css">		
-
+	<script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
 										</li>
 									</ul>
 								</nav>
-								<a class="nav__link order-link" href="6">Заказать</a>
+								<a class="nav__link nav-scroll order-link" href="6">Заказать</a>
 							</div>
 						</header>
 						<div class="start__container">
@@ -677,35 +677,35 @@
 									<div class="order__form-row order__form-row_double">
 										<label class="order__form-block">
 											<div class="order__form-label">Имя</div>
-											<input class="order__form-input" name="name" type="text" placeholder="">
+											<input class="order__form-input" name="name" type="text" placeholder=" ">
 										</label>
 										<label class="order__form-block">
 											<div class="order__form-label">Телефон</div>
-											<input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+											<input class="order__form-input phone-mask" name="phone" type="tel" placeholder="+7(123) 456 78 90">
 										</label>
 									</div>
 									<div class="order__form-row">
 										<label class="order__form-block">
 											<div class="order__form-label">Улица</div>
-											<input class="order__form-input" name="street" type="text" placeholder="">
+											<input class="order__form-input" name="street" type="text" placeholder=" ">
 										</label>
 									</div>
 									<div class="order__form-row order__form-row_quatro">
 										<label class="order__form-block">
 											<div class="order__form-label">Дом</div>
-											<input class="order__form-input" name="home" type="text" placeholder="">
+											<input class="order__form-input" name="home" type="text" placeholder=" ">
 										</label>
 										<label class="order__form-block">
 											<div class="order__form-label">Корпус</div>
-											<input class="order__form-input" name="part" type="text" placeholder="">
+											<input class="order__form-input" name="part" type="number" placeholder=" ">
 										</label>
 										<label class="order__form-block">
 											<div class="order__form-label">Квартира</div>
-											<input class="order__form-input" name="appt" type="text" placeholder="">
+											<input class="order__form-input" name="appt" type="number" placeholder=" ">
 										</label>
 										<label class="order__form-block">
 											<div class="order__form-label">Этаж</div>
-											<input class="order__form-input" name="floor" type="text" placeholder="">
+											<input class="order__form-input" name="floor" type="number" placeholder=" ">
 										</label>
 									</div>
 								</div>
@@ -718,12 +718,12 @@
 									</div>
 									<div class="order__form-row">
 										<label class="order__radio">
-											<input class="order__radio-elem" name="payment" type="radio">
+											<input class="order__radio-elem" name="payment" type="radio" value="Потребуется сдача">
 											<div class="order__radio-fake"></div>
 											<div class="order__radio-title">Потребуется сдача</div>
 										</label>
 										<label class="order__radio">
-											<input class="order__radio-elem" name="payment" type="radio">
+											<input class="order__radio-elem" name="payment" type="radio" value="Оплата по карте">
 											<div class="order__radio-fake"></div>
 											<div class="order__radio-title">Оплата по карте</div>
 										</label>
@@ -736,7 +736,7 @@
 										</label>
 									</div>
 									<div class="order__form-row">
-										<input class="order__form-button" name="" type="submit" value="Заказать">
+										<input class="order__form-button" id="order__form-button" name="" type="submit" value="Заказать">
 										<input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
 									</div>
 								</div>
@@ -750,7 +750,9 @@
 
 
 				<section class="section map">
-					<div class="yandex-map" id="map"></div>
+					<div class="yandex-map">
+						<div id="map" style="width: 100%; height: 100%"></div>
+					</div>
 					<footer class="footer">
 						<div class="container">
 							<div class="footer__col">
@@ -825,13 +827,17 @@
 
 		<!--success-->
 
+		<div class="full-review popup" id="success">
+			<div class="full-review__wrap">
+				<a class="full-review__close" href="#">
+					<img class="popup__close" src="img/icons/close.svg" alt="close" >
+				</a>			
+				<div class="full-review__inner">
+					<div class="full-review__title">Сообщение отправлено</div>
 
-		<div class="status-popup popup" id="success">
-			<div class="status-popup__inner">
-				<div class="status-popup__message">Сообщение отправлено</div><a class="status-popup__close btn" href="#">Закрыть</a>
+				</div>
 			</div>
 		</div>
-
 
 		<!--error-->		
 
@@ -848,6 +854,10 @@
     <script src="js/slider.js"></script> 
     <script src="js/nav.js"></script> 
     <script src="js/popup.js"></script>  
-    <script src="js/accordeon_menu.js"></script>               
+    <script src="js/accordeon_menu.js"></script> 
+    <script src="js/order.js"></script> 
+    <script src="js/yandex_map.js"></script> 
+
+                      
 	</body>
 	</html>

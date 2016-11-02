@@ -22,6 +22,7 @@
 
  		function _close(e) {
  			e.preventDefault();
+ 			console.log('!!!');
  			$(this).closest('.full-review').removeClass('active');
  		}
 
