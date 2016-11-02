@@ -677,7 +677,7 @@
 									<div class="order__form-row order__form-row_double">
 										<label class="order__form-block">
 											<div class="order__form-label">Имя</div>
-											<input class="order__form-input" name="name" type="text" placeholder=" ">
+											<input class="order__form-input" name="name" type="text" placeholder=" " maxlength="30">
 										</label>
 										<label class="order__form-block">
 											<div class="order__form-label">Телефон</div>
@@ -687,7 +687,7 @@
 									<div class="order__form-row">
 										<label class="order__form-block">
 											<div class="order__form-label">Улица</div>
-											<input class="order__form-input" name="street" type="text" placeholder=" ">
+											<input class="order__form-input" name="street" type="text" placeholder=" " maxlength="30">
 										</label>
 									</div>
 									<div class="order__form-row order__form-row_quatro">
@@ -713,12 +713,12 @@
 									<div class="order__form-row">
 										<label class="order__form-block">
 											<div class="order__form-label">Комментарий</div>
-											<textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+											<textarea class="order__form-input order__form-input_textarea" name="comment" maxlength="300"></textarea>
 										</label>
 									</div>
 									<div class="order__form-row">
 										<label class="order__radio">
-											<input class="order__radio-elem" name="payment" type="radio" value="Потребуется сдача">
+											<input class="order__radio-elem" name="payment" type="radio" value="Потребуется сдача" checked="checked">
 											<div class="order__radio-fake"></div>
 											<div class="order__radio-title">Потребуется сдача</div>
 										</label>
@@ -834,7 +834,7 @@
 				</a>			
 				<div class="full-review__inner">
 					<div class="full-review__title">Сообщение отправлено</div>
-
+					<table id="table__order" class="table__order"></table>
 				</div>
 			</div>
 		</div>

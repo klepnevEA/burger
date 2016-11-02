@@ -1613,7 +1613,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
   bottom: 0;
   margin: auto;
   width: 460px;
-  height: 227px;
+  min-height: 223px;
+  max-height: 268px;
   padding: 25px 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1674,4 +1675,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .status-popup__message {
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+.table__order {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__order tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.table__order td {
+  padding: 3px;
+  white-space: nowrap;
 }
