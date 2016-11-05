@@ -3,15 +3,15 @@
 require "../phpmailer/PHPMailerAutoload.php";
 
 $user = [
-	'name' => $_REQUEST['name'],
-	'phone' => $_REQUEST['phone'],
-	'street' => $_REQUEST['street'],
-	'home' => $_REQUEST['home'],
-	'part' => $_REQUEST['part'],
-	'appt' => $_REQUEST['appt'],
-	'floor' => $_REQUEST['floor'],
-	'comment' => $_REQUEST['comment'],
-	'payment' => $_REQUEST['payment']
+	'name' => $_POST['name'],
+	'phone' => $_POST['phone'],
+	'street' => $_POST['street'],
+	'home' => $_POST['home'],
+	'part' => $_POST['part'],
+	'appt' => $_POST['appt'],
+	'floor' => $_POST['floor'],
+	'comment' => $_POST['comment'],
+	'payment' => $_POST['payment']
 ];
 
 
@@ -39,6 +39,7 @@ $mail->Body    = 'Сообщение от пользователя: '. $user['na
 $mail->AltBody = 'Альтернативный текст';
 
 echo json_encode($user);
+
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';

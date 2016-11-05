@@ -13,7 +13,12 @@
         .full-review__wrap {
              @include transform(scale(1));
              opacity:1;            
-        }       
+        } 
+
+        .full-review__wrap_error {
+             @include transform(scale(1));
+             opacity:1;            
+        }              
     }
    
 }
@@ -36,16 +41,24 @@
     bottom: 0;
     margin: auto;
     width: 460px;
-    min-height: 223px;
     max-height: 268px;   
     padding: 25px 20px;
-    @include border_radius(4px);
+    @include border_radius(5px);
     box-shadow: 0 10px 25px rgba(0,0,0,.5);
     @include transition(.5s);
     transition-timing-function: cubic-bezier(0.61, 0.19, 0.72, 1.76);
     @include transform(scale(0.5)); 
     opacity:0;   
+}
 
+.full-review__wrap_error {
+
+    @extend .full-review__wrap; 
+
+    width: 198px;
+    max-height: 106px; 
+    padding: 17px 20px;
+    text-align: center;    
 }
 
 .full-review__close {
@@ -85,6 +98,8 @@
 .status-popup__inner {
     padding: 20px;
     text-align: center;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .status-popup__message {
@@ -105,4 +120,23 @@
        padding: 3px;
        white-space: nowrap;
     }
+}
+
+.error-message {
+    display: inline-block;
+    @include fira('Ubuntu-Light');
+    font-size: 15px;
+    line-height: 1em;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 22px;
+}
+
+.full-review__close_error {
+    background-color: #e45028;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 9px 17px;
+    font-size: 0.9rem;
+    @include border_radius(5px);
 }
